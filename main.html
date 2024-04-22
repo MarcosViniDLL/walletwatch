@@ -14,5 +14,51 @@
         <div class="logo">WalletWatch</div>
         <button class="logout-btn"><i class="fas fa-sign-out-alt"></i>Sair</button>
     </div>
+    <!-- Principal -->
+    <section class="add-transaction">
+        <h2>Olá! Aqui você irá adicionar as suas transações.</h2>
+        <form>
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Digite a descrição do seu gasto (Café, Viagem e etc):" required>
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor:</label>
+                <input type="number" name="valor" id="valor" placeholder="Digite o valor da transação" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo" required>
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <button type="submit">Adicionar</button>
+        </form>
+    </section>
+    <section class="transaction-list">
+        <h2>Lista de Transações</h2>
+        <div class="transactions">
+
+        </div>
+    </section>
+    <section class="control-options">
+        <h2>Opções</h2>
+        <div class="reset-type">
+            <button id="reset-type">Redefinir Entrada/Saída</button>
+        </div>
+        <div class="clear-data">
+            <button id="clear-data">Limpar</button>
+        </div>
+        <div class="generate-report">
+            <button id="generate-report">Gerar Relatório</button>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 </html>

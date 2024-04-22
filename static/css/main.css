@@ -45,3 +45,121 @@ body {
 .logout-btn i {
     margin-right: 5px;
 }
+
+.add-transaction,
+.transaction-list,
+.control-options {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+.add-transaction h2,
+.transaction-list h2,
+.control-options h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-group input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-group button[type="submit"],
+.control-options button {
+    background-color: #DB4A2B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button[type="submit"]:hover,
+.control-options button:hover {
+    background-color: #c9302c;
+}
+
+.add-transaction button[type="submit"] {
+    background-color: #DB4A2B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-transaction button[type="submit"]:hover {
+    background-color: #c9302c;
+}
+
+.transactions {
+    margin-top: 10px;
+}
+
+.transaction {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.control-options {
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+.reset-type,
+.clear-data,
+.generate-report {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.reset-type button,
+.clear-data button,
+.generate-report button {
+    background-color: #DB4A2B;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reset-type button:hover,
+.clear-data button:hover,
+.generate-report button:hover {
+    background-color: #c9302c;
+}

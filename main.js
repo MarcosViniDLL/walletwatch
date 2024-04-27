@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('.add-transaction form');
     const transactionsList = document.querySelector('.transaction-list .transactions');
-    const resetTypeBtn = document.getElementById('reset-type');
     const clearDataBtn = document.getElementById('clear-data');
     const generateReportBtn = document.getElementById('generate-report');
     const reportContainer = document.querySelector('.report');
@@ -30,10 +29,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function clearTransactions() {
         transactionsList.innerHTML = '';
-    }
-
-    function resetType() {
-        form.tipo.value = '';
+        totalEntradas = 0;
+        totalSaidas = 0;
+        saldo = 0;
+        generateReport();
     }
 
     function generateReport() {
@@ -66,14 +65,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const clear = confirm('Tem certeza que deseja limpar os dados?');
         if (clear) {
             clearTransactions();
-            generateReport();
-        }
-    });
-
-    resetTypeBtn.addEventListener('click', function () {
-        const tipo = confirm('Tem certeza que deseja redefinir entrada/saída?');
-        if (tipo) {
-            resetType();
         }
     });
 

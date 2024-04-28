@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gerar_relatorio.css')}}">
+</head>
+<body>
+    <h1>Relatório Financeiro</h1>
+    <p>Data: {{ relatorio.data }}</p>
+    <p>Total de Entradas: R$ {{ relatorio.total_entradas }}</p>
+    <p>Total de Saídas: R$ {{ relatorio.total_saidas }}</p>
+    <p>Saldo Atual: R$ {{ relatorio.saldo }}</p>
+</body>
+</html>
